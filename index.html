@@ -1,87 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NobleAI | Trade Smarter. Powered by AI.</title>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-    body{background:#0B0F14;color:white;}
-    header{
-      display:flex;justify-content:space-between;align-items:center;
-      padding:18px 20px;background:#10161D;
-    }
-    .logo{font-size:26px;font-weight:bold;color:#10B981;}
-    .btn{
-      padding:10px 16px;border-radius:8px;text-decoration:none;
-      font-weight:bold;margin-left:8px;
-    }
-    .login{border:1px solid #10B981;color:#10B981;}
-    .signup{background:#10B981;color:#fff;}
-    .hero{text-align:center;padding:60px 20px;}
-    .hero h1{font-size:36px;color:#10B981;}
-    .hero p{margin:15px 0;color:#B0B8C0;}
-    .start{
-      background:#10B981;color:white;padding:14px 28px;
-      border-radius:10px;text-decoration:none;display:inline-block;
-      margin-top:15px;
-    }
-    .services{padding:40px 20px;}
-    .services h2{text-align:center;color:#10B981;margin-bottom:25px;}
-    .card{
-      background:#151C24;border:1px solid #10B981;
-      border-radius:14px;padding:20px;margin-bottom:20px;
-    }
-    .card h3{color:#10B981;margin-bottom:10px;}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NobleAI - Trade Smarter</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#050505;color:white}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;background:#000;position:sticky;top:0}
+.logo{color:#00ff99;font-size:28px;font-weight:bold}
+nav a{color:white;text-decoration:none;margin-left:12px}
+.hero{padding:60px 20px;text-align:center;background:linear-gradient(#000,#042b20)}
+.hero h1{font-size:40px;color:#00ff99}
+.hero p{margin:15px 0;color:#ccc}
+.btn{padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:bold;margin:8px;display:inline-block}
+.green{background:#00ff99;color:#000}
+.outline{border:2px solid #00ff99;color:#00ff99}
+.chart{height:180px;background:#111;border-radius:20px;margin-top:30px;overflow:hidden;position:relative}
+.line{height:3px;width:200%;background:#00ff99;position:absolute;top:50%;animation:move 4s linear infinite}@keyframes move{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
+section{padding:25px 20px}
+h2{color:#00ff99;text-align:center;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.card{background:#111;padding:18px;border-radius:15px;border:1px solid #00ff99;text-align:center}.ticker{display:flex;gap:12px;overflow:auto}.ticker div{background:#111;border:1px solid #00ff99;padding:10px 14px;border-radius:12px;white-space:nowrap}.profit{color:#00ff99;font-weight:bold}.testimonial{background:#111;padding:15px;border-left:4px solid #00ff99;border-radius:12px;margin-bottom:12px}footer{background:#000;padding:30px 20px;text-align:center;border-top:1px solid #00ff99}.socials a{color:#00ff99;text-decoration:none;margin:0 10px}
+</style>
 </head>
 <body>
-
-<header>
-  <div class="logo">NobleAI</div>
-  <div>
-    <a href="#" class="btn login">Log In</a>
-    <a href="#" class="btn signup">Sign Up</a>
-  </div>
-</header>
-
-<section class="hero">
-  <h1>Trade Smarter. Powered by AI.</h1>
-  <p>Automated Trading Bots • Forex Mentorship • Premium Forex Signals</p>
-  <a href="#services" class="start">Get Started</a>
-</section>
-
-<section class="services" id="services">
-  <h2>Our Services</h2>
-<!-- LIVE TRADING SECTION -->
-<section class="live-trading">
-  <h2>📊 Live Market Analysis</h2>
-  <p>
-    NobleAI monitors the forex market 24/7 using AI-powered trading bots,
-    giving real-time market insights and automated trade execution.
-  </p>
-
-  <div class="chart-box">
-    <div class="chart-line"></div>
-  </div>
-
-  <a href="#" class="start">Start Trading</a>
-</section>
-  <div class="card">
-    <h3>🤖 Automated Trading Bots</h3>
-    <p>AI-powered bots that trade 24/7 with smart risk management.</p>
-  </div>
-
-  <div class="card">
-    <h3>🎓 Forex Mentorship</h3>
-    <p>Learn forex from beginner to advanced with live coaching.</p>
-  </div>
-
-  <div class="card">
-    <h3>📈 Premium Forex Signals</h3>
-    <p>Receive high-quality daily Buy & Sell signals with TP and SL.</p>
-  </div>
-</section>
-
+<header><div class="logo">NobleAI</div><nav><a href="#">Home</a><a href="#services">Services</a><a href="#contact">Contact</a></nav></header>
+<section class="hero"><h1>Trade Smarter with NobleAI</h1><p>AI Trading Bots • VIP Signals • Mentorship • Account Management</p><a class="btn green">Sign Up</a><a class="btn outline">Login</a><div class="chart"><div class="line"></div></div></section>
+<section><h2>Live Market</h2><div class="ticker"><div>XAU/USD <span class="profit">▲ +1.24%</span></div><div>EUR/USD <span class="profit">▲ +0.18%</span></div><div>BTC/USD <span class="profit">▲ +2.45%</span></div><div>GBP/USD <span style="color:red">▼ -0.09%</span></div></div></section>
+<section id="services"><h2>Our Services</h2><div class="grid"><div class="card"><h3>🤖 Trading Bots</h3><p>24/7 Automated Trading.</p></div><div class="card"><h3>📈 VIP Signals</h3><p>High Accuracy Signals.</p></div><div class="card"><h3>🎓 Mentorship</h3><p>Learn Forex Step by Step.</p></div><div class="card"><h3>💼 Account Management</h3><p>Grow Your Trading Account.</p></div></div></section>
+<section><h2>Live Trading Results</h2><div class="card"><p>XAU/USD BUY — <span class="profit">+148 Pips</span></p><hr><p>GBP/USD SELL — <span class="profit">+96 Pips</span></p><hr><p>BTC/USD BUY — <span class="profit">+12.8%</span></p></div></section>
+<section><h2>Why Choose NobleAI?</h2><div class="grid"><div class="card">98% Signal Accuracy</div><div class="card">24/7 Support</div><div class="card">Secure Payments</div><div class="card">1,000+ Traders Mentored</div></div></section>
+<section><h2>Client Testimonials</h2><div class="testimonial">⭐⭐⭐⭐⭐ "NobleAI bots helped me become consistently profitable."</div><div class="testimonial">⭐⭐⭐⭐⭐ "The mentorship changed my trading completely."</div><div class="testimonial">⭐⭐⭐⭐⭐ "VIP signals are accurate and easy to follow."</div></section>
+<footer id="contact"><h2>NobleAI</h2><p>Trade with confidence. Win with AI.</p><div class="socials"><a href="#">WhatsApp</a><a href="#">Telegram</a><a href="#">Instagram</a></div><p style="margin-top:15px">© 2026 NobleAI. All Rights Reserved.</p></footer>
 </body>
 </html>
